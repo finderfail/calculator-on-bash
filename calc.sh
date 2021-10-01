@@ -16,4 +16,12 @@ elif [[ ( $ndm == "-" ) ]];
 then
 ((sum=$fst-$scd))
 echo "$sum"
+elif [[ ( $ndm == "/" ) ]];
+then
+((sum=$fst/$scd))
+echo "$sum"
+elif [[ ( $ndm == "*" ) ]];
+then
+((sum=$fst*$scd))
+echo "$sum"
 fi
