@@ -1,27 +1,27 @@
 #!/bin/bash
 echo "Small calculator"
 echo "First number"
-read fst
-echo "You First number is $fst"
+read 1
+echo "You First number is $1"
 echo "Second number"
-read scd
-echo "You Second number is $scd"
+read 2
+echo "You Second number is $2"
 echo "+-*/"
-read ndm
-if [[ ( $ndm == "+" ) ]];
+read 3
+if [[ ( $3 == "+" ) ]];
 then
-((sum=$fst+$scd))
+((sum=$1+$2))
 echo "$sum"
-elif [[ ( $ndm == "-" ) ]];
+elif [[ ( $3 == "-" ) ]];
 then
-((sum=$fst-$scd))
+((sum=$1-$2))
 echo "$sum"
-elif [[ ( $ndm == "/" ) ]];
+elif [[ ( $3 == "/" ) ]];
 then
-((sum=$fst/$scd))
+((sum=$1/$2))
 echo "$sum"
-elif [[ ( $ndm == "*" ) ]];
+elif [[ ( $3 == "*" ) ]];
 then
-((sum=$fst*$scd))
+((sum=$1*$2))
 echo "$sum"
 fi
