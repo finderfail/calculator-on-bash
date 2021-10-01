@@ -7,10 +7,10 @@ read scd
 echo "You Second number is $scd"
 echo "+-*/"
 read ndm
-if [$ndm == "+"];
+if [[ ( $ndm == "+" ) ]];
 then
 ((sum=$fst+$scd))
-elif [$ndm == "-"];
+elif [[ ( $ndm == "-" ) ]];
 then
 ((sum=$fst-$scd))
 echo "$sum"
