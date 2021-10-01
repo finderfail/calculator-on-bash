@@ -17,5 +17,6 @@ then
 echo "$sum"
 elif [[ ( $1 == "--help" ) ]];
 then
-echo "For start working with calculator use than command bash calcs.sh 100 20 -"
+echo "If says Not perrmissions use chmod +x calc.sh"
+echo "For start working with calculator use than command ./calc.sh 100 20 -"
 fi
