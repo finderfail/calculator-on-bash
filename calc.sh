@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Small calculator"
 echo "First number"
 read fst
